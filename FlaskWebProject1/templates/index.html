@@ -2,32 +2,83 @@
 
 {% block content %}
 
-<div class="jumbotron">
-    <h1>Flask</h1>
-    <p class="lead">Flask is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Flask gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Python Tools for Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>
+<body>
+    <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
 
-{% endblock %}
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15202508_10209938021905665_3502934364266904246_n.jpg?oh=9fd0ad7cab0971c17fb57f95a565bc0c&oe=58FB677C" alt="rommel" width="460" height="345">
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15136000_10209938024705735_6237691533121005628_n.jpg?oh=3d4792b17e32706a30d77cca6b6ba772&oe=58B566CE" alt="rommel" width="460" height="345">
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15170900_10209938023145696_7521728360853129592_n.jpg?oh=dbf243223918593c2151b7fa3323d499&oe=58FB1725" alt="Flower" width="460" height="345">
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15219433_10209938056906540_4435198730358433443_n.jpg?oh=3524cef2617bd7ee6c4c220b7e2d8e46&oe=58B7A5B1" alt="Flower" width="460" height="345">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Serving God</h2>
+            <p>
+                Serving is the overflow of His love for us.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Singles Ministry</h2>
+            <p>I love reaching out to the singles. Pray for them, listen to what they have to say such as things that they have gone through in their lives, and share to them how God loves them so much.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Music Ministry</h2>
+            <p>I'm currently serving in a music ministr at CCF New Zealand as I really love worshiping the King of Kings.</p>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
